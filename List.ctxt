@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=List
+comment1.params=
+comment1.target=List()
+comment2.params=i
+comment2.target=void\ insertFirst(int)
+comment3.params=
+comment3.target=int\ removeFirst()
+comment4.params=
+comment4.target=java.lang.Boolean\ isEmpty()
+comment5.params=
+comment5.target=int\ count()
+comment6.params=p\ i
+comment6.target=void\ insertAfter(Item,\ int)
+comment7.params=p
+comment7.target=int\ deleteAfter(Item)
+comment8.params=i
+comment8.target=Item\ find(int)
+numComments=9
