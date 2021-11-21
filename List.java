@@ -1,10 +1,23 @@
 public class List
 {
     private Item list;
-
-    public List()
+    private List linkedList;
+    
+    public List(int arr[])
     {
         list = null;
+        //linkedList = null;
+        
+        for (int i = 0; i < arr.length; i++)
+        {
+            //Item r = new Item(arr[i]);
+            Item r = new Item(arr[i]);
+            r.next = list;
+            list = r;
+            System.out.print(r.info);
+        }
+        
+        //System.out.print(linkedList);
     }
 
     public void insertFirst(int i)
@@ -86,14 +99,15 @@ public class List
     //WRITE ALL 8 OF YOUR NEW METHODS DOWN HERE
     //You are required to Javadoc comment only these new methods
     
-    public void LinkedList() 
+    public void LinkedList(int arr[]) 
     {
         list = null;
+        
     }
     
     public void toString(List list)
     {
-        System.out.print(list.toString());
+        //System.out.print(list.toString());
     }
     
     public void findLast()
@@ -101,18 +115,28 @@ public class List
         
     }
     
+    public void insertLast(int a)
+    {
+    
+    }
+    
+    public List copy()
+    {
+        return linkedList;
+    }
+    
     public void removeLast()
     {
     
     }
     
-    public void join()
+    public List join(List a)
     {
-    
+        return linkedList;
     }
     
-    public void intersesct()
+    public List intersect(List a)
     {
-    
+        return linkedList;
     }
 }

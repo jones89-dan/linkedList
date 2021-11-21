@@ -7,20 +7,20 @@ public class Tester
 
         int b[] = {6, 5, 4, 3};
         List list2 = new List(b);
+        
+       // list1.insertLast(5);
+       // System.out.println("insertLast() gives: " + list1.toString());
 
-        list1.insertLast(5);
-        System.out.println("insertLast() gives: " + list1.toString());
+       // list2.removeLast();
+       // System.out.println("removeLast() gives: " + list2.toString());
 
-        list2.removeLast();
-        System.out.println("removeLast() gives: " + list2.toString());
+       // List result = list2.copy();
+       // System.out.println("copy() gives: " + result.toString());
 
-        List result = list2.copy();
-        System.out.println("copy() gives: " + result.toString());
+        //result = result.join(list2);
+        //System.out.println("join() gives: " + result.toString());
 
-        result = result.join(list2);
-        System.out.println("join() gives: " + result.toString());
-
-        result = list1.intersect(list2);
-        System.out.println("intersect() gives: " + result.toString());
+        //result = list1.intersect(list2);
+        //System.out.println("intersect() gives: " + result.toString());
     }
 }
