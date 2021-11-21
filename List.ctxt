@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=List
-comment1.params=arr
-comment1.target=List(int[])
+comment1.params=
+comment1.target=List()
 comment10.params=list
 comment10.target=void\ toString(List)
 comment11.params=
@@ -31,5 +31,5 @@ comment7.target=int\ deleteAfter(Item)
 comment8.params=i
 comment8.target=Item\ find(int)
 comment9.params=arr
-comment9.target=void\ LinkedList(int[])
+comment9.target=List(int[])
 numComments=17

@@ -3,21 +3,9 @@ public class List
     private Item list;
     private List linkedList;
     
-    public List(int arr[])
+    public List()
     {
         list = null;
-        //linkedList = null;
-        
-        for (int i = 0; i < arr.length; i++)
-        {
-            //Item r = new Item(arr[i]);
-            Item r = new Item(arr[i]);
-            r.next = list;
-            list = r;
-            System.out.print(r.info);
-        }
-        
-        //System.out.print(linkedList);
     }
 
     public void insertFirst(int i)
@@ -99,10 +87,21 @@ public class List
     //WRITE ALL 8 OF YOUR NEW METHODS DOWN HERE
     //You are required to Javadoc comment only these new methods
     
-    public void LinkedList(int arr[]) 
+    public List(int arr[])
     {
         list = null;
+        //linkedList = null;
         
+        for (int i = 0; i < arr.length; i++)
+        {
+            //Item r = new Item(arr[i]);
+            Item r = new Item(arr[i]);
+            r.next = list;
+            list = r;
+            System.out.print(r.info);
+        }
+        
+        //System.out.print(linkedList);
     }
     
     public void toString(List list)
