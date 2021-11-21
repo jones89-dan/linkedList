@@ -90,22 +90,35 @@ public class List
     public List(int arr[])
     {
         list = null;
-        //linkedList = null;
         
-        for (int i = 0; i < arr.length; i++)
+        for (int i = arr.length-1; i>=0; i--)
         {
-            //Item r = new Item(arr[i]);
             Item r = new Item(arr[i]);
             r.next = list;
             list = r;
-            System.out.print(r.info);
+            //System.out.print(r.info);
         }
         
-        //System.out.print(linkedList);
     }
     
-    public void toString(List list)
+    public String toString()
     {
+   
+        StringBuilder s = new StringBuilder("");
+        
+        if (!isEmpty()) {
+            Item r = list;
+            
+            while (r.next != null) { 
+                s.append(r.info + ", ");
+                r = r.next;
+                //s.append(r.info);
+            }
+            
+            s.append(r.info);
+        }
+        
+        return s.toString();
         //System.out.print(list.toString());
     }
     
@@ -137,5 +150,18 @@ public class List
     public List intersect(List a)
     {
         return linkedList;
+    }
+    
+    public void append(int x)
+    {
+        Item r = new Item(x);
+        if (isEmpty()) {
+            r.next = r;
+        }
+        else {
+            r.next = list.next;
+            list.next = r;
+        }
+        list = r;
     }
 }
