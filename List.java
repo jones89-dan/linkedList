@@ -85,5 +85,34 @@ public class List
     
     //WRITE ALL 8 OF YOUR NEW METHODS DOWN HERE
     //You are required to Javadoc comment only these new methods
+    
+    public void LinkedList() 
+    {
+        list = null;
+    }
+    
+    public void toString(List list)
+    {
+        System.out.print(list.toString());
+    }
+    
+    public void findLast()
+    {
         
+    }
+    
+    public void removeLast()
+    {
+    
+    }
+    
+    public void join()
+    {
+    
+    }
+    
+    public void intersesct()
+    {
+    
+    }
 }
