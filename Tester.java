@@ -8,12 +8,6 @@ public class Tester
         int b[] = {6, 5, 4, 3};
         List list2 = new List(b);
         
-        ///tests
-        System.out.println("To String: " + list1.toString());
-        System.out.println("To String: " + list2.toString());
-        System.out.println("Find last: " + list1.findLast());
-        System.out.println("Find last: " + list2.findLast());
-        
         list1.insertLast(5);
         System.out.println("insertLast() gives: " + list1.toString());
 
@@ -26,7 +20,7 @@ public class Tester
         result = result.join(list2);
         System.out.println("join() gives: " + result.toString());
 
-        //result = list1.intersect(list2);
-        //System.out.println("intersect() gives: " + result.toString());
+        result = list1.intersect(list2);
+        System.out.println("intersect() gives: " + result.toString());
     }
 }
