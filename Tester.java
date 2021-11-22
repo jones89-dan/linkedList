@@ -20,11 +20,11 @@ public class Tester
         list2.removeLast();
         System.out.println("removeLast() gives: " + list2.toString());
 
-       // List result = list2.copy();
-       // System.out.println("copy() gives: " + result.toString());
+        List result = list2.copy();
+        System.out.println("copy() gives: " + result.toString());
 
-        //result = result.join(list2);
-        //System.out.println("join() gives: " + result.toString());
+        result = result.join(list2);
+        System.out.println("join() gives: " + result.toString());
 
         //result = list1.intersect(list2);
         //System.out.println("intersect() gives: " + result.toString());

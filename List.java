@@ -91,14 +91,12 @@ public class List
     {
         list = null;
         
-        for (int i = arr.length-1; i>=0; i--)
-        {
+        for (int i = arr.length-1; i>=0; i--) {
             Item r = new Item(arr[i]);
             r.next = list;
             list = r;
             //System.out.print(r.info);
         }
-        
     }
     
     public String toString()
@@ -118,7 +116,6 @@ public class List
         }
         
         return s.toString();
-        //System.out.print(list.toString());
     }
     
     public int findLast()
@@ -132,8 +129,7 @@ public class List
     public void insertLast(int x)
     {
         Item r = list;
-        Item last = null;
-
+            
         while (r.next != null) {
             r = r.next;
         }        
@@ -145,7 +141,6 @@ public class List
     public void removeLast()
     {
         Item r = list;
-        Item q = null;
         
         if (isEmpty() || r.next == null)
             System.out.println("Error in removeLast(): list is empty");
@@ -159,12 +154,28 @@ public class List
     
     public List copy()
     {
-        return linkedList;
+        List copyList = new List();
+        Item r = list;
+        
+        while (r != null) {
+            copyList.append(r.info);
+            r = r.next;
+        }    
+        
+        return copyList; 
     }
     
-    public List join(List a)
+    public List join(List x)
     {
-        return linkedList;
+        Item r = list;
+        
+        while (r != null) {
+            
+            x.append(r.info);
+            r = r.next;
+        }
+        
+        return x;
     }
     
     public List intersect(List a)
@@ -175,13 +186,14 @@ public class List
     public void append(int x)
     {
         Item r = new Item(x);
-        if (isEmpty()) {
-            r.next = r;
+        
+        if (list == null) {
+            list = r;
         }
         else {
             r.next = list.next;
             list.next = r;
+            // this kind of works? list.next = r;
         }
-        list = r;
     }
 }
