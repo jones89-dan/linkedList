@@ -142,14 +142,24 @@ public class List
         
     }
     
+    public void removeLast()
+    {
+        Item r = list;
+        Item q = null;
+        
+        if (isEmpty() || r.next == null)
+            System.out.println("Error in removeLast(): list is empty");
+        
+        while (r.next.next != null) {
+            r = r.next;
+        } 
+        
+        r.next = null;
+    }
+    
     public List copy()
     {
         return linkedList;
-    }
-    
-    public void removeLast()
-    {
-    
     }
     
     public List join(List a)

@@ -17,8 +17,8 @@ public class Tester
         list1.insertLast(5);
         System.out.println("insertLast() gives: " + list1.toString());
 
-       // list2.removeLast();
-       // System.out.println("removeLast() gives: " + list2.toString());
+        list2.removeLast();
+        System.out.println("removeLast() gives: " + list2.toString());
 
        // List result = list2.copy();
        // System.out.println("copy() gives: " + result.toString());
