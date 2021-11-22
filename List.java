@@ -112,7 +112,6 @@ public class List
             while (r.next != null) { 
                 s.append(r.info + ", ");
                 r = r.next;
-                //s.append(r.info);
             }
             
             s.append(r.info);
@@ -122,14 +121,25 @@ public class List
         //System.out.print(list.toString());
     }
     
-    public void findLast()
+    public int findLast()
     {
-        
+        Item r = list;
+        while (r.next != null)
+            r = r.next;
+        return r.info;
     }
     
-    public void insertLast(int a)
+    public void insertLast(int x)
     {
-    
+        Item r = list;
+        Item last = null;
+
+        while (r.next != null) {
+            r = r.next;
+        }        
+        
+        r.next = new Item(x);
+        
     }
     
     public List copy()
